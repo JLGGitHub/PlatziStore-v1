@@ -9,7 +9,10 @@ import {FormsModule} from '@angular/forms';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 import { HomeComponent } from './components/home/home.component';
-import { SidebarComponent } from './shared/sidebar/sidebar.component'
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BannerComponent } from './components/banner/banner.component'
 
 
 // DEFINICION DE LOS SERVICIOS
@@ -22,7 +25,10 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component'
     ProductComponent,
     ProductsComponent,
     HomeComponent,
-    SidebarComponent
+    SidebarComponent,
+    ContactComponent,
+    FooterComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

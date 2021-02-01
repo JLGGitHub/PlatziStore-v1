@@ -1,12 +1,5 @@
-
 <app-sidebar></app-sidebar>
 
-<div class="container-fluid">
-  <div class="row">
-    <app-product class="col-md-3" *ngFor="let product of products"
-    [product]="product"
-    (addCart)="AddProduct($event)">
-  </app-product>
-  </div>
-  
+<div >
+  <router-outlet></router-outlet>
 </div>

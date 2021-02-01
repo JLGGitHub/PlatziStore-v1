@@ -1,4 +1,3 @@
-
 <div class="card">
     <div class="center-image">
         <img class="size-image" [src]="product.image" [alt]="product.title">
@@ -6,10 +5,10 @@
         <h6 class="card-subtitle mb-2 text-muted">{{product.price | currency }}</h6>
 
     </div>
-   
+
     <div class="container-fluid">
-      <p class="card-text">{{product.description}}</p>
-      <button class="btn btn-block btn-success" (click)="AddCart()">Comprar</button>
-      <button class="btn btn-block btn-outline-danger" (click)="AddCart()">Detalle</button>
+        <p class="card-text">{{product.description}}</p>
+        <button class="btn btn-block btn-success" (click)="AddCart()">Comprar</button>
+        <button class="btn btn-block btn-outline-danger" (click)="AddCart()">Detalle</button>
     </div>
-  </div>
+</div>
