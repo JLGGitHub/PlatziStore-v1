@@ -12,7 +12,8 @@ import { HomeComponent } from './components/home/home.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { BannerComponent } from './components/banner/banner.component'
+import { BannerComponent } from './components/banner/banner.component';
+import { DetailProductComponent } from './components/detail-product/detail-product.component'
 
 
 // DEFINICION DE LOS SERVICIOS
@@ -28,7 +29,8 @@ import { BannerComponent } from './components/banner/banner.component'
     SidebarComponent,
     ContactComponent,
     FooterComponent,
-    BannerComponent
+    BannerComponent,
+    DetailProductComponent
   ],
   imports: [
     BrowserModule,
