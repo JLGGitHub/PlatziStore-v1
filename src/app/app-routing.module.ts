@@ -1,27 +1,30 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContactComponent } from './components/contact/contact.component';
-import { DetailProductComponent } from './components/detail-product/detail-product.component';
-import { HomeComponent } from './components/home/home.component';
-import { ProductsComponent } from './components/products/products.component';
+import { ContactComponent } from './modules/contact/components/contact.component';
+import { LayoutComponent } from './layout/layout.component';
 
 const routes: Routes = [
   {
-    path: 'home', 
-    component: HomeComponent
-  },
-  {
-    path: 'products', 
-    component: ProductsComponent
-  }, 
-  {
-    path: "products/:id", 
-    component: DetailProductComponent
+    path: '', 
+    component: LayoutComponent, 
+    children: [
+      {
+        path: 'home', 
+        loadChildren: () => import('./modules/home/home.module').then(module => module.HomeModule)
+      },
+      {
+        path: 'products', 
+        loadChildren: () => import('./modules/products/products.module').then(module => module.ProductsModule)
+      },
+     
+    
+    ]
   },
   {
     path: 'contact', 
     component: ContactComponent
-  }, 
+  },
+ 
   {
     path: '**', 
     pathMatch: 'full',

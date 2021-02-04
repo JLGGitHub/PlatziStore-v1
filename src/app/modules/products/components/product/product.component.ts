@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Product } from '../products/services/product.model';
+import { Product } from '../../../../core/entities/product.model';
 
 // IMPORTACIONES PROPIAS DE LA APP.
 
@@ -25,6 +25,9 @@ export class ProductComponent implements OnInit {
     this.addCart.emit('El id del producto es: ' + this.product.id);
   }
 
+  DetailProduct() {
+    console.log(this.product.id);
+  }
 
 
 }

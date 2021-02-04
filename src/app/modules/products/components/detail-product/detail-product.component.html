@@ -1,0 +1,17 @@
+<div class="col-lg-4 col-xlg-3 col-md-5">
+    <div class="card">
+        <div class="card-body">
+            <div class="m-t-30"> <img [src]="product.image" class="img-circle" width="250">
+                <h4 class="card-title m-t-10">{{product.title | uppercase}}</h4>
+                <h6 class="card-subtitle">{{product.price | currency}}</h6>
+            </div>
+        </div>
+        <div>
+            <hr>
+        </div>
+        <div class="card-body"> <small class="text-muted">Descripción </small>
+            <h6>{{product.description}}</h6> 
+            <button class="btn btn-block btn-outline-danger" [routerLink]="['/products']">Regresar</button>
+        </div>
+    </div>
+</div>

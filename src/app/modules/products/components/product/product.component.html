@@ -9,6 +9,6 @@
     <div class="container-fluid">
         <p class="card-text">{{product.description}}</p>
         <button class="btn btn-block btn-success" (click)="AddCart()">Comprar</button>
-        <button class="btn btn-block btn-outline-danger" (click)="AddCart()">Detalle</button>
+        <button class="btn btn-block btn-outline-danger" [routerLink]="['/products', product.id]">Detalle</button>
     </div>
 </div>

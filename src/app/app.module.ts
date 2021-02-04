@@ -5,15 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
 
+
+import { SharedModule } from './shared/shared.module';
 // DEFINICION DE LOS COMPONENTES PROPIOS 
-import { ProductComponent } from './components/product/product.component';
-import { ProductsComponent } from './components/products/products.component';
-import { HomeComponent } from './components/home/home.component';
-import { SidebarComponent } from './shared/sidebar/sidebar.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { BannerComponent } from './components/banner/banner.component';
-import { DetailProductComponent } from './components/detail-product/detail-product.component'
+import { ContactComponent } from './modules/contact/components/contact.component';
+import { LayoutComponent } from './layout/layout.component'
 
 
 // DEFINICION DE LOS SERVICIOS
@@ -23,19 +19,14 @@ import { DetailProductComponent } from './components/detail-product/detail-produ
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
-    ProductsComponent,
-    HomeComponent,
-    SidebarComponent,
     ContactComponent,
-    FooterComponent,
-    BannerComponent,
-    DetailProductComponent
+    LayoutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    FormsModule
+    FormsModule, 
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
